@@ -11,6 +11,7 @@ module.exports = {
       xl: {min: '1440px'},
     },
     spacing: {
+      0: '0px',
       10: '10px',
       16: '16px',
       20: '20px',
@@ -19,6 +20,10 @@ module.exports = {
       48: '48px',
       64: '64px',
       100: '100px',
+      'screen' : '100%',
+    },
+    height : {
+      'screen' : '100%',
     },
     fontSize : {
       m: '20px',
@@ -28,9 +33,17 @@ module.exports = {
     },
     borderRadius: {
       s : '10px',
+      l : '16px',
+      full : '50%',
     },
     extend: {
-
+      colors: {
+        darkRed : '#871A02',
+        gold : '#ac9367',
+      },
+      rotate: {
+        20 : '20deg',
+      },
     },
   },
   plugins: [],
