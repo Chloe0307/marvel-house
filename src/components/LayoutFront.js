@@ -1,4 +1,4 @@
-import marvel from '../assets/banner/marvel_banner_2.gif'
+import marvel from '../assets/banner/marvel_banner.gif'
 import marvelLine from "../assets/images/marvel_line.jpeg"
 
 const LayoutFront = ({ children }) => {

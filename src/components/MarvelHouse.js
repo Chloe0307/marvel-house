@@ -97,8 +97,10 @@ const MarvelHouse = () => {
                                         titleComics={v.stories.items.slice(0,3).map((v,i) => (
                                             <span className="flex flex-col" key={'titleComics_' + i}>- {v.name}</span>
                                         ))}
-                                        isFavorite={() => myFavorite.push(v.name)}
-                                        extraClass={'w-[30px] rounded-full h-[30px] bg-gold flex items-center justify-center'}
+                                        isFavorite={() => {
+                                            myFavorite.push(v.name)
+                                            setMyFavorite(myFavorite)
+                                        }}
                                     />
                                 ))}
                             </div>

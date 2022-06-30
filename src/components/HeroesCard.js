@@ -1,8 +1,8 @@
 import {useState} from "react";
 import imgDefault from '../assets/images/marvel-logo.jpeg'
-import favorite from '../assets/icons/favorite.png'
+import Favorite from '../assets/icons/favorite.png'
 
-const HeroesCard = ({ img, description, name, comics, titleComics, isFavorite, extraClass }) => {
+const HeroesCard = ({ img, description, name, comics, titleComics, isFavorite }) => {
   const infoHero = () => {
       console.log('ça clique')
   }
@@ -14,8 +14,8 @@ const HeroesCard = ({ img, description, name, comics, titleComics, isFavorite, e
     };
     return (
         <div className={"w-[20%] border-2 border-black rounded-s p-16 " + (isRotated ? ' bg-gold text-darkRed ' : ' front bg-black')} >
-            <button onClick={isFavorite} className={extraClass}>
-                <img src={favorite} alt="" className={'w-[20px] '}/>
+            <button onClick={isFavorite}>
+                <img src={Favorite} alt="" className="w-[30px]"/>
             </button>
             <div className={(isRotated ? ' flex flex-row-reverse items-center justify-between ' : 'flex flex-col ')}>
                 <p className={"font-bold text-m block text-center pb-16 " + (isRotated ? 'text-black mx-auto text-l pl-10' : ' text-gold' )} onClick={onRotate}>{name}</p>
